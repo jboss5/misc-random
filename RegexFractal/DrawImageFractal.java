@@ -28,10 +28,12 @@ public class DrawImageFractal
 {
     private BufferedImage image;
     private RegularExpression regex;
+    private final static String REGEX_STRING = ".*12.*";
+    private final static int SIZE = 1024;
 
     public static void main(String[] args)
     {
-        DrawImageFractal dif = new DrawImageFractal(1024, ".*12.*");
+        DrawImageFractal dif = new DrawImageFractal(SIZE, REGEX_STRING);
         dif.buildImage();
     }
 
