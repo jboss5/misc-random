@@ -1,0 +1,134 @@
+<ui version="4.0" >
+ <class>FileGenDialog</class>
+ <widget class="QDialog" name="FileGenDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>118</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>File Generator</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>371</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2" >
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" >
+      <item>
+       <layout class="QGridLayout" name="gridLayout" >
+        <item row="0" column="0" >
+         <widget class="QLabel" name="labName" >
+          <property name="font" >
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text" >
+           <string>File Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QLineEdit" name="nameEdit" />
+        </item>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="labSize" >
+          <property name="font" >
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection" >
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="text" >
+           <string>File Size</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QLineEdit" name="sizeEdit" />
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout" >
+        <item>
+         <widget class="QLabel" name="labIdle" >
+          <property name="font" >
+           <font>
+            <pointsize>18</pointsize>
+           </font>
+          </property>
+          <property name="text" >
+           <string>IDLE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar" >
+          <property name="value" >
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" >
+      <property name="sizeConstraint" >
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QPushButton" name="startBtn" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="text" >
+         <string>START</string>
+        </property>
+        <property name="autoDefault" >
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stopBtn" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="text" >
+         <string>STOP</string>
+        </property>
+        <property name="autoDefault" >
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="quitBtn" >
+        <property name="text" >
+         <string>QUIT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
